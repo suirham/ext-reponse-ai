@@ -3,7 +3,9 @@
 // ==========================
 // CONFIG
 // ==========================
-const OPENAI_API_KEY = "apikey"; // ⚠️ clé en dur (local only)
+
+import { OPENAI_API_KEY } from "./config.js";
+
 const OPENAI_MODEL = "gpt-4o";    // change si besoin
 const COMMAND_ANALYZE = "analyze-page";
 
