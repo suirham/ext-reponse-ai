@@ -15,4 +15,6 @@ alt appuyé + souris inactive sur le fond de la page (bouger le curseur pour act
 
 ## Pour modifier nb lignes output :
 css :
-> -webkit-line-clamp: //nblignes//;
+```
+-webkit-line-clamp: //nblignes//;
+```
