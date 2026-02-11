@@ -22,7 +22,7 @@ css :
 
 
 ## Pricing
-### price for 1M Tokens [https://developers.openai.com/api/docs/pricing](Details)
+### price for 1M Tokens // [Details](https://developers.openai.com/api/docs/pricing)
 cons : ~5K Tokens/utilisation
 ```
 Model	            Input	Cached Input    Output

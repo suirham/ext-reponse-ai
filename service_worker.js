@@ -6,7 +6,7 @@
 
 import { OPENAI_API_KEY } from "./config.js";
 
-const OPENAI_MODEL = "gpt-5.2";    // change si besoin
+const OPENAI_MODEL = "gpt-5-nano";    // change si besoin
 const COMMAND_ANALYZE = "analyze-page";
 
 // ==========================
