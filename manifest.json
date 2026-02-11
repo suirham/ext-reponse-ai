@@ -1,0 +1,33 @@
+{
+  "name": "Page Q&A (IA)",
+  "description": "Raccourci clavier -> détecte les questions dans la page -> répond via API IA.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.openai.com/*"],
+
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "commands": {
+    "analyze-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Analyser la page et répondre aux questions"
+    }
+  }
+}
