@@ -4,7 +4,7 @@
 // CONFIG
 // ==========================
 const OPENAI_API_KEY = "apikey"; // ⚠️ clé en dur (local only)
-const OPENAI_MODEL = "gpt-4.1-mini";    // change si besoin
+const OPENAI_MODEL = "gpt-4o";    // change si besoin
 const COMMAND_ANALYZE = "analyze-page";
 
 // ==========================
