@@ -12,3 +12,6 @@ dans vos extensions chrome > raccourcis clavier
 
 Pour afficher output :
 alt appuyé + souris inactive sur le fond de la page (bouger le curseur pour actualiser)
+
+Pour modifier nb lignes output :
+css :   -webkit-line-clamp: //nblignes//;
