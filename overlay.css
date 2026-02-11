@@ -24,7 +24,7 @@
   transition: opacity 80ms ease, transform 80ms ease;
 
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
