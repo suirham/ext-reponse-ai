@@ -6,7 +6,7 @@
 
 import { OPENAI_API_KEY } from "./config.js";
 
-const OPENAI_MODEL = "gpt-4o";    // change si besoin
+const OPENAI_MODEL = "gpt-5.2";    // change si besoin
 const COMMAND_ANALYZE = "analyze-page";
 
 // ==========================
@@ -244,8 +244,10 @@ async function callOpenAI(prompt) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: OPENAI_MODEL,
-      input: prompt
+      model: OPENAI_MODEL,          // ex: "gpt-5.1"
+      input: prompt,
+      text: { format: { type: "json_object" } }, // ✅ force JSON
+      // reasoning: { effort: "medium" } // optionnel si tu veux
     })
   });
 
